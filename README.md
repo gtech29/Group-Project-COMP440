@@ -1,1 +1,1 @@
-Repo for COMP440 - Data
+Repo for COMP440 - Databas Design Class
