@@ -5,6 +5,7 @@ import mysql.connector
 import os
 from dotenv import load_dotenv
 from mysql.connector import errorcode
+import hashlib
 
 # load the .env file
 load_dotenv()
@@ -13,7 +14,7 @@ load_dotenv()
 db_username = os.getenv("DB_USER")
 db_password = os.getenv("DB_PASSWORD")
 
-import hashlib
+
 
 def hash_password(password):
     return hashlib.sha256(password.encode()).hexdigest()
