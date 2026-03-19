@@ -5,13 +5,12 @@ import mysql.connector
 import os
 from dotenv import load_dotenv
 from mysql.connector import errorcode
-import hashlib
 
 # load the .env file
 load_dotenv()
 
 # retrieve username and password
-db_username = os.getenv("DB_USER")
+db_username = os.getenv("DB_USERNAME")
 db_password = os.getenv("DB_PASSWORD")
 
 
